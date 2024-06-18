@@ -1,0 +1,10 @@
+word_dict: English_word.pkl
+sentence_dict: English_sen.pkl
+text_encoder_version: <PATH_TO_CKPT_DIR>/flant5-large-finetuned/checkpoint-40000
+audio_tokenizer_ckpt_path: <PATH_TO_CKPT_DIR>/codec/ckpt_01135000.pth
+prepend_bos_and_append_tgt_lang_tag: false
+dict_length: 3956
+batch_max_frames: 650
+multi: 1
+num_coarse_quantizers: 3
+max_dur: 200
