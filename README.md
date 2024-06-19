@@ -175,10 +175,11 @@ Part of the code is borrowed from the following repos. We would like to thank th
 ## Citations ##
 If you find this code useful in your research, please cite our work:
 ```bib
-@article{wang2024prompt,
+@inproceedings{wang2024prompt,
   title={Prompt-Singer: Controllable Singing-Voice-Synthesis with Natural Language Prompt},
   author={Wang, Yongqi and Hu, Ruofan and Huang, Rongjie and Hong, Zhiqing and Li, Ruiqi and Liu, Wenrui and You, Fuming and Jin, Tao and Zhao, Zhou},
-  journal={arXiv preprint arXiv:2403.11780},
+  booktitle={Proceedings of the 2024 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers)},
+  pages={4780--4794},
   year={2024}
 }
 ```
