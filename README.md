@@ -103,7 +103,9 @@ The training data should consist of the following parts:
   * `gender`: gender lable of the item, should be one of `[male, female]`.
   * `phone`: duplicated phonemes by the durations.
   * `txt`: original lyrics, not used in training.
-  * `f0_rescale`: relative value of f0 with the average of its voiced part being 230.
+  * `f0_rescale`: relative value of f0 with the average of its voiced part being 222.
+  
+    > The `f0_rescale` in the manifests we provides above has a voiced-part mean of 222, which is slightly different from the 230 reported in the paper. However, small changes in its value will not affect model performance as long as it is consistent for all data items.
   * `f0_avg`: average of the voiced part of f0.
   * `n_frames`: length of the acoustic units sequences, need to be pre-calculated.
   * `pitch`: vocal range lable of the item, should be one of `[high, low]`.
