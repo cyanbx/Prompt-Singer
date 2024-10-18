@@ -8,6 +8,13 @@ This is the PyTorch implementation of Prompt-Singer (NAACL'24), a singing-voice-
 
 ## Note
 
+**UPD:** We observe that the effect of attribute drop during training may need to be reevaluated, as it could damage the model's control capabilities in some cases. If you find that the control performance is not good when training your own model, you can try modifying [`research/PromptSinger/dataset/t2a_sing_t5_config_dataset.py#L499`](research/PromptSinger/dataset/t2a_sing_t5_config_dataset.py#L499) of the code by setting `p1` and `p2` to 0.0 to turn off attribute dropping. This should still yield good control performance for both single and multiple attributes.
+
+```python
+overall_text_prompt = self.choose(gender = gender_label, volume = volume_label, pitch = pitch_label, p1 = 0.0, p2 = 0.0)
+```
+---
+
 This implementation differs slightly from the version we conduct experiments with in the paper. We use a 16kHz SoundStream to extract acoustic units of the training data of the transformer (downsampled to 16kHz). The vocoder is still trained to generate 24kHz audio.
 
 The correctness of this open-source version has not been fully verified. Feel free to create an issue if you find any problems.
