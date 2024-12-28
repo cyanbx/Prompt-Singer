@@ -156,7 +156,6 @@ def do_setup(package_data):
             "soundfile",
             "pyarrow",
             "transformers",
-            "scikit-learn",
             "iopath",
             "editdistance",
             "more_itertools",
