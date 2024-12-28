@@ -4,6 +4,8 @@
 
 [![arXiv](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/abs/2403.11780) [![Demo](https://img.shields.io/badge/GitHub.io-Audio_Samples-blue.svg?logo=Github)](https://prompt-singer.github.io/)  
 
+contact: [cyanbox@zju.edu.cn](mailto:cyanbox@zju.edu.cn)
+
 This is the PyTorch implementation of Prompt-Singer (NAACL'24), a singing-voice-synthesis model with controllability over speaker gender, volume, and vocal range with natural language prompt. We provide the finetuned FLAN-T5 version of our code and checkpoints.
 
 ## Note
